@@ -1,0 +1,10 @@
+{
+  "name": "animation-nintendo-switch",
+  "version": "1.0.0",
+  "description": "animation of logo nintedo switch",
+  "main": "index.js",
+  "repository": "git@github.com:lcassiano1612/animation-nintendo-switch.git",
+  "author": "Lucas de Oliveira <l.cassiano1612@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
