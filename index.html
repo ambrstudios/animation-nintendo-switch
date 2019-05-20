@@ -6,17 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nintedo Switch</title>
     <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <style>
       * {
         margin: 0;
         padding: 0;
       }
+      html, body {
+        height: 100%;
+      }
       body {
         background: #fc0114;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Lato', sans-serif;
       }
+      h1, p {
+        text-transform: uppercase;
+        color: #fff;
+      }
+      h1 {
+        letter-spacing: 10px;
+        font-size: 14pt;
+      }
+      p {
+        font-weight: bold;
+        letter-spacing: 4px;
+        font-size: 29pt;
+      }
+      .container > div {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 10px 0;
+      }
+      .left {
+        border: 8px solid #fff;
+        width: 40px;
+        margin: 0 8px 0 0;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      .right {
+        border: 8px solid #fff;
+        width: 40px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+
     </style>
   </head>
-  <body>
-    
+  <body onload="playAudio()">
+    <script>
+      const playAudio = () => { document.getElementsByTagName('audio')[0].play() }  
+    </script>
+    <audio src="https://media.nintendo.com/nintendo/cocoon/noa3/images/page/switch/sound.mp3"></audio>
+    <div class="container">
+      <div>
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+      <h1>nintendo</h1>
+      <p>switch</p>
+    </div>
   </body>
 </html>
